@@ -1,0 +1,5 @@
+trilobit_pexels:
+    path: /trilobit/pexels
+    defaults:
+        _controller: "TrilobitPexelsBundle:Pexels:search"
+        _scope: backend

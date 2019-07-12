@@ -1,0 +1,18 @@
+trilobit:
+    pexels:
+        api_url: 'https://api.pexels.com/v1/search'
+
+        api:
+            query:
+            per_page: int
+            page: int
+
+        imageSource:
+            original:
+            large:
+            large2x:
+            medium:
+            small:
+            portrait:
+            landscape:
+            tiny:
