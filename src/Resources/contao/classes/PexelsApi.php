@@ -198,9 +198,14 @@ class PexelsApi
     {
         $response = new Response();
 
-        $response->setContent(json_encode($arrResult));
+        if (!\is_array($arrResult['photos']) || 0 === \count($arrResult['photos'])) {
+            $arrResult['total_results'] = 0;
+            $response->setStatusCode(Response::HTTP_NO_CONTENT);
+        } else {
+            $response->setStatusCode(Response::HTTP_OK);
+        }
 
-        $response->setStatusCode(Response::HTTP_OK);
+        $response->setContent(json_encode($arrResult));
 
         $response->headers->set('Content-Type', 'application/json');
         $response->headers->set('Pragma', 'no-cache');

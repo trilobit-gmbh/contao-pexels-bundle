@@ -30,11 +30,3 @@ Compatibility
 -------------
 
 - Contao version ~4.4
-
-
-Dependency
-----------
-
-This extension is dependent on the following extensions:
-
-- [[trilobit-gmbh/contao-dcfolder]](https://packagist.org/packages/trilobit-gmbh/contao-dcfolder)
