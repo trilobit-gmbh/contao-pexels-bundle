@@ -18,6 +18,13 @@ Installation
 
 Install the extension via composer: [trilobit-gmbh/contao-pexels-bundle](https://packagist.org/packages/trilobit-gmbh/contao-pexels-bundle).
 
+And add the following code (with the API-Key from the Pexels Website) to the config.yml of your project.
+
+    contao:
+      localconfig:
+        pexelsApiKey: 'Your API-Key'
+        pexelsImageSource: 'large2x'
+
 
 Compatibility
 -------------
